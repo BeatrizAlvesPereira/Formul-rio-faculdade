@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Formulário de matrícula para a faculdade.">
+        <meta name = "robots" content = "noindex, nofollow">
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <title>Faculdade - Matrícula</title>
+        <link rel = "stylesheet" type = "text/css" href= "CSS/faculdade.css"/>
+    </head>
+    <body>
+        <!-- 1° serção - cabeçalho -->
+        <header>
+            <h1>Faculdade</h1>
+        </header>
+
+        <!-- página principal -->
+        <main>
+
+            <!-- 2° serção - Formuláriio de matrícula de inscrição para a faculdade -->
+            <section>
+                <div>
+                    <h2>Matrícula</h2>
+                    <p> Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade. </p>
+                </div>
+                <div class = "formulario">
+                    <form type = "post" action = "https://www.devmedia.com.br/codigos/formularios/aula3/">
+                        <label>Nome:</label>
+                        <input type = "text" name = "nome" required placeholder = "Digite o seu nome completo"/>
+                        <label>Data de nascimento:</label>
+                        <input type = "date" name = "data" required max = "2004-01-01"/>
+                        <label>E-mail:</label>
+                        <input type = "email" name = "e-mail" required placeholder = "email@email.com"/>
+                        <label>Telefone:</label>
+                        <input type = "tel" name = "telefone" required placeholder = "(XX) X XXXX-XXXX" minlength = "14"/>
+                        <label>Melhor dia para vencimento:</label>
+                        <input type = "number" name = "números" required placeholder="Valores entre 10 e 20" min = "10" max = "20"/>
+                        <label>Login:</label>
+                        <input type = "text" name = "login" required placeholder = "Login" minlength = "3"/>
+                        <label>Senha:</label>
+                        <input type = "password" name = "senha" required placeholder = "Senha" minlength = "4" maxlength = "8"/>
+                        <button type = "submit">Enviar Matrícula</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <!-- 3° serção - Rodapé -->
+        <footer>
+            <p>&copy; Copyright 2020 - Faculdade</p>
+            <p>Desenvolvido por <span>Beatriz Alves</span></p>
+        </footer>
+    </body>
+</html>
